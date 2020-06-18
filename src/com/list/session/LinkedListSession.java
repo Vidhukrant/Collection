@@ -1,5 +1,6 @@
 package com.list.session;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkedListSession {
@@ -32,8 +33,29 @@ public class LinkedListSession {
         ll.removeLast();
         System.out.println("Content of linked list:" + ll);
         //Remove particular element 
-        ll.remove(2);
+       // ll.remove(2);
         System.out.println("Content of linked list:" + ll);
+        
+        for(int i=0;i<=ll.size();i++) {
+        	System.out.println(ll.get(i));
+        }
+        
+        for(String s4 : ll) {
+        	System.out.println(s4);
+		}
+        System.out.println("using iterator");
+        Iterator<String> it=ll.iterator();
+        while(it.hasNext()) {
+        	System.out.println(it.next());
+        }
+        
+        System.out.println("Using while loop");
+        int num=0;
+        while(ll.size()>0) {
+        	
+        	System.out.println(ll.get(num));
+        	num++;
+        }
 	}
 
 }

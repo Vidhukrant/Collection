@@ -15,6 +15,8 @@ public class HashTableConcept {
 		//Clone the object
 		Hashtable h2=new Hashtable();
 		h2=(Hashtable)h1.clone();
+		System.out.println(h2.hashCode());
+		System.out.println(h1.hashCode());
 		
 		System.out.println("The value from h1:"+h1);
 		System.out.println("The value from h2:"+h2);

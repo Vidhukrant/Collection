@@ -16,10 +16,42 @@ public class ArrayListConcept {
 		//4. Allow random access to fetch the element because it stores the values on the basis of indexes.
 		ArrayList ar=new ArrayList();
 		ar.add(10);
+		ar.add(12);
 		ar.add(20);
 		ar.add(30);
+		ArrayList ar7=new ArrayList();
+		ar7.add("hello:");
+		ar7.add("India:");
+		
+		ar.addAll(ar7);
+		ar.removeAll(ar7);
+		ar.retainAll(ar7);
+		
+		for(int p=0;p<=ar.size();p++) {
+			
+			System.out.println(ar.get(p));
+		}
+		
 		System.out.println(ar.size()); // size of arraylist
-		System.out.println(ar.get(2)); // to get the value from an index
+		//System.out.println(ar.get(2)); // to get the value from an index
+		
+		ArrayList ar2=new ArrayList();
+		ar2.add("test1");
+		ar2.add("test2");
+		ar2.add("test3");
+		
+		ArrayList ar3=new ArrayList();
+		ar3.add("test4");
+		ar3.add("test5");
+		ar3.add("test6");
+		
+		ar2.addAll(ar3);// Will merger the list with ar2.
+		ar2.removeAll(ar3);// will remove the list of ar3 from ar2
+		ar2.retainAll(ar3);//will print comman value from both list
+		
+		for(int c=0;c<ar2.size();c++) {
+			System.out.println(ar2.get(c));
+		}
 		
 		for(int i=0;i<ar.size();i++) {
 			System.out.println(ar.get(i));
@@ -43,7 +75,9 @@ public class ArrayListConcept {
 				System.out.println(emp.dept);
 			}
 			
+			
 			}
+		
 	}
-
+	
 }
