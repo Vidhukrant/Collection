@@ -14,6 +14,7 @@ public class ArrayListIteration {
 		ar.add("Python");
 		ar.add("C++");
 		
+		System.out.println("=======Using for each with lambda");
 		ar.forEach(ar1 ->{
 			System.out.println(ar1);
 		});

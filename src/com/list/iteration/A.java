@@ -8,7 +8,7 @@ public class A {
 
 	public static void main(String[] args) {
 	  
-		ArrayList<String> arr=new ArrayList<String>();
+		/*ArrayList<String> arr=new ArrayList<String>();
 		arr.add("Hello");
 		arr.add("India");
 		arr.add("Bharat");
@@ -40,5 +40,9 @@ public class A {
 		while(lt.hasPrevious()) {
 			System.out.println(lt.previous());
 		}
+*/
+	String s="000fj--d878nf766438jnp?:::";
+	String s2=s.replaceAll("[^0-9np]", "");
+	System.out.println(s2); 
 	}
 }
